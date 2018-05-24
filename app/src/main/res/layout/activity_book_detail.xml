@@ -8,7 +8,7 @@
 
 	<include layout="@layout/toolbar"/>
 	
-	<com.example.newbiechen.ireader.widget.RefreshLayout
+	<com.eagle.kindle.ireader.widget.RefreshLayout
 		android:id="@+id/refresh_layout"
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
@@ -357,7 +357,7 @@
 					android:foregroundGravity="center" />
 			</LinearLayout>
 		</ScrollView>
-	</com.example.newbiechen.ireader.widget.RefreshLayout>
+	</com.eagle.kindle.ireader.widget.RefreshLayout>
 </LinearLayout>
 
 

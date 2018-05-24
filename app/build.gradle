@@ -5,7 +5,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
-        applicationId "com.example.newbiechen.ireader"
+        applicationId "com.eagle.kindle.ireader"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -23,12 +23,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '27.0.3'
 }
 
 greendao{
     schemaVersion 3
-    daoPackage 'com.example.newbiechen.ireader.model.gen'
+    daoPackage 'com.eagle.kindle.ireader.model.gen'
     targetGenDir 'src/main/java'
 }
 
@@ -40,7 +40,7 @@ repositories {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
